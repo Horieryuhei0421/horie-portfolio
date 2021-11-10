@@ -4,13 +4,14 @@ import { AppBar } from "@material-ui/core";
 import { Toolbar } from "@material-ui/core";
 import HeaderMenus from "./HeaderMenus";
 import ClosableDrawer from "./ClosableDrawer";
+import styles from "./Header.module.css";
 
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
   },
   menuBar: {
-    backgroundColor: "#E7EAF0",
+    backgroundColor: "#f4f4f4",
     color: "#444",
   },
   toolbar: {
@@ -45,14 +46,8 @@ const Header = () => {
 
   return (
     <div classes={classes.root}>
-      <AppBar position="fixed" className={classes.menuBar} >
+      <AppBar position="fixed" className={classes.menuBar}>
         <Toolbar className={classes.toolbar}>
-          {/* <img
-              src={promo_tag}
-              alt="TorahackLogo"
-              width="105px"
-            // onClick={() => dispatch(push("/adviserpage"))}
-            /> */}
           <div className={classes.iconButtons}>
             <HeaderMenus handleDrawerToggle={handleDrawerToggle} />
           </div>
