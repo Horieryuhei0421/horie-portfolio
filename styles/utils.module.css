@@ -55,7 +55,8 @@
   height: 80%;
   margin: 1.5rem 0rem 1.5rem 0rem;
   border-radius: 0.5rem;
-  box-shadow: inset 7px 7px 5px #c9c9c9, inset -7px -7px 5px #ffffff;
+  box-shadow: inset 7px 7px 5px rgba(170, 170, 170, 0.48),
+    inset -7px -7px 5px #ffffff;
 }
 
 @media screen and (max-width: 1000px) {

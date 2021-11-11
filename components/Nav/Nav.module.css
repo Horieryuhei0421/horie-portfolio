@@ -1,5 +1,5 @@
 .container {
-  width: 10%;
+  width: 12%;
   min-height: 100vh;
 }
 
@@ -11,4 +11,14 @@
 
 .containerFrame {
   padding-top: 1.5rem;
+  text-align: center;
+}
+
+.navObject {
+  padding: 1rem;
+  color: #7c7c7c;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 9px 9px 16px rgba(173, 173, 173, 0.6), -9px -9px 16px #ffffff;
+  margin-bottom: 2rem;
 }

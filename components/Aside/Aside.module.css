@@ -11,4 +11,23 @@
 
 .containerFrame {
   padding-top: 1.5rem;
+  text-align: center;
+}
+
+.asideObject {
+  width: 65%;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #7c7c7c;
+  padding: 1.4rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 9px 9px 16px rgba(173, 173, 173, 0.6), -9px -9px 16px #ffffff;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .asideObject {
+    width: 80%;
+  }
 }
