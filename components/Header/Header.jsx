@@ -6,12 +6,12 @@ import HeaderMenus from "./HeaderMenus";
 import ClosableDrawer from "./ClosableDrawer";
 import styles from "./Header.module.css";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((Theme) => ({
   root: {
     flexGrow: 1,
   },
   menuBar: {
-    backgroundColor: "#f4f4f4",
+    backgroundColor: "#e7eaf0",
     color: "#444",
   },
   toolbar: {
@@ -22,7 +22,7 @@ const useStyles = makeStyles({
   iconButtons: {
     margin: "0 0 0 auto",
   },
-});
+}));
 
 const Header = () => {
   const classes = useStyles();
@@ -45,15 +45,17 @@ const Header = () => {
   );
 
   return (
-    <div classes={classes.root}>
-      <AppBar position="fixed" className={classes.menuBar}>
-        <Toolbar className={classes.toolbar}>
-          <div className={classes.iconButtons}>
-            <HeaderMenus handleDrawerToggle={handleDrawerToggle} />
-          </div>
-        </Toolbar>
-      </AppBar>
-      <ClosableDrawer open={open} onClose={handleDrawerToggle} />
+    <div className={styles.headerRoot}>
+      <div classes={classes.root}>
+        <AppBar position="fixed" className={classes.menuBar}>
+          <Toolbar className={classes.toolbar}>
+            <div className={classes.iconButtons}>
+              <HeaderMenus handleDrawerToggle={handleDrawerToggle} />
+            </div>
+          </Toolbar>
+        </AppBar>
+        <ClosableDrawer open={open} onClose={handleDrawerToggle} />
+      </div>
     </div>
   );
 };

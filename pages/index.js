@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
 import Header from '../components/Header/Header'
+import styles from '../styles/utils.module.css'
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section>
+      <section className={styles.mainBox}>
         <p>[Your Self Introduction]</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
