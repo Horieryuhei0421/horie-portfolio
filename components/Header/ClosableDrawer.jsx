@@ -8,6 +8,7 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core";
 import { AddCircle, History, Person, ExitToApp } from "@material-ui/icons";
+import { push } from "connected-react-router";
 
 const useStyles = makeStyles((theme) => ({
   drawer: {
@@ -19,11 +20,6 @@ const useStyles = makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: 256,
-  },
-  searchField: {
-    alignItems: "center",
-    display: "flex",
-    marginLeft: 32,
   },
 }));
 
@@ -39,15 +35,15 @@ const ClosableDrawer = (props) => {
   const menus = [
     {
       func: selectMenu,
-      label: "ホーム",
+      label: "HOME",
       id: "home",
-      value: "/adviserpage",
+      value: "/",
     },
     {
       func: selectMenu,
-      label: "通知",
-      id: "notice",
-      value: "/notice",
+      label: "PROFILE",
+      id: "profile",
+      value: "/posts/firstpost",
     },
   ];
 
@@ -77,7 +73,6 @@ const ClosableDrawer = (props) => {
                 key={menu.id}
                 onClick={(e) => menu.func(e, menu.value)}
               >
-                <ListItemIcon>{menu.icon}</ListItemIcon>
                 <ListItemText primary={menu.label} />
               </ListItem>
             ))}

@@ -5,6 +5,16 @@
   text-align: end;
 }
 
+.iconBox {
+  height: 40px;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  box-shadow: inset -3px -3px 3px #c9c9c9, inset 3px 3px 3px #ffffff;
+}
+
 @media screen and (min-width: 1000px) {
   .headerRoot {
     display: none;
