@@ -5,7 +5,9 @@ import styles from "./Aside.module.css";
 const Aside = () => {
   return (
     <div className={styles.container}>
-      <p>○</p>
+      <div className={styles.containerFrame}>
+        <button>○</button>
+      </div>
     </div>
   );
 };

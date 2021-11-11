@@ -53,7 +53,20 @@
 
 .mainBox {
   height: 80%;
-  margin: 0.5rem;
-  border-radius: 0.2rem;
+  margin: 1.5rem 0rem 1.5rem 0rem;
+  border-radius: 0.5rem;
   box-shadow: inset 7px 7px 5px #c9c9c9, inset -7px -7px 5px #ffffff;
+}
+
+@media screen and (max-width: 1000px) {
+  .mainBox {
+    margin: 0.8rem auto;
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .mainBox {
+    margin: 1.5rem auto;
+  }
 }

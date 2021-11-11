@@ -7,7 +7,8 @@ import {
   ListItemText,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core";
-import { AddCircle, History, Person, ExitToApp } from "@material-ui/icons";
+import { push } from "connected-react-router";
+import styles from "./Header.module.css";
 
 const useStyles = makeStyles((theme) => ({
   drawer: {
@@ -20,10 +21,8 @@ const useStyles = makeStyles((theme) => ({
   drawerPaper: {
     width: 256,
   },
-  searchField: {
-    alignItems: "center",
-    display: "flex",
-    marginLeft: 32,
+  objectAline: {
+    textAlign: "center",
   },
 }));
 
@@ -39,15 +38,15 @@ const ClosableDrawer = (props) => {
   const menus = [
     {
       func: selectMenu,
-      label: "ホーム",
+      label: "HOME",
       id: "home",
-      value: "/adviserpage",
+      value: "/",
     },
     {
       func: selectMenu,
-      label: "通知",
-      id: "notice",
-      value: "/notice",
+      label: "PROFILE",
+      id: "profile",
+      value: "/posts/firstpost",
     },
   ];
 
@@ -61,6 +60,7 @@ const ClosableDrawer = (props) => {
         onClose={(e) => props.onClose(e)}
         // classes={{ paper: classes.drawerPaper }}
         ModalProps={{ keepMounted: true }}
+        className={classes.bg}
       >
         <div
           onClose={(e) => {
@@ -71,16 +71,23 @@ const ClosableDrawer = (props) => {
           }}
         >
           <List>
-            {menus.map((menu) => (
+            {/* {menus.map((menu) => (
               <ListItem
                 button
                 key={menu.id}
                 onClick={(e) => menu.func(e, menu.value)}
               >
-                <ListItemIcon>{menu.icon}</ListItemIcon>
                 <ListItemText primary={menu.label} />
               </ListItem>
-            ))}
+            ))} */}
+            <div className={styles.nemuFlex}>
+              <div className={styles.objectAline}>HOME</div>
+              <div className={styles.objectAline}>PERSON</div>
+            </div>
+            <div className={styles.nemuFlex}>
+              <div className={styles.objectAline}>PROJECTS</div>
+              <div className={styles.objectAline}>LINK</div>
+            </div>
           </List>
         </div>
       </Drawer>
