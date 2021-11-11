@@ -7,8 +7,8 @@ import {
   ListItemText,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core";
-import { AddCircle, History, Person, ExitToApp } from "@material-ui/icons";
 import { push } from "connected-react-router";
+import styles from "./Header.module.css";
 
 const useStyles = makeStyles((theme) => ({
   drawer: {
@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: 256,
+  },
+  objectAline: {
+    textAlign: "center",
   },
 }));
 
@@ -57,6 +60,7 @@ const ClosableDrawer = (props) => {
         onClose={(e) => props.onClose(e)}
         // classes={{ paper: classes.drawerPaper }}
         ModalProps={{ keepMounted: true }}
+        className={classes.bg}
       >
         <div
           onClose={(e) => {
@@ -67,7 +71,7 @@ const ClosableDrawer = (props) => {
           }}
         >
           <List>
-            {menus.map((menu) => (
+            {/* {menus.map((menu) => (
               <ListItem
                 button
                 key={menu.id}
@@ -75,7 +79,15 @@ const ClosableDrawer = (props) => {
               >
                 <ListItemText primary={menu.label} />
               </ListItem>
-            ))}
+            ))} */}
+            <div className={styles.nemuFlex}>
+              <div className={styles.objectAline}>HOME</div>
+              <div className={styles.objectAline}>PERSON</div>
+            </div>
+            <div className={styles.nemuFlex}>
+              <div className={styles.objectAline}>PROJECTS</div>
+              <div className={styles.objectAline}>LINK</div>
+            </div>
           </List>
         </div>
       </Drawer>
