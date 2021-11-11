@@ -3,6 +3,8 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import Link from 'next/link'
 import Header from './Header/Header'
+import Nav from './Nav/Nav'
+import Aside from './Aside/Aside'
 
 const name = '堀江龍平（改正）'
 export const siteTitle = 'Next.js Sample Website'
@@ -26,7 +28,11 @@ export default function Layout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Header />
-      <main>{children}</main>
+      <section className={styles.mainFrame}>
+        <Nav />
+        <main className={styles.main}>{children}</main>
+        <Aside />
+      </section>
     </div>
   )
 }

@@ -4,3 +4,9 @@
   background-color: #e7eaf0;
   text-align: end;
 }
+
+@media screen and (min-width: 1000px) {
+  .headerRoot {
+    display: none;
+  }
+}

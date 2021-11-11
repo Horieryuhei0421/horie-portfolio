@@ -50,3 +50,10 @@
 .lightText {
   color: #666;
 }
+
+.mainBox {
+  height: 80%;
+  margin: 0.5rem;
+  border-radius: 0.2rem;
+  box-shadow: inset 7px 7px 5px #c9c9c9, inset -7px -7px 5px #ffffff;
+}
