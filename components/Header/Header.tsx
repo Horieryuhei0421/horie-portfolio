@@ -5,8 +5,10 @@ import { Toolbar } from "@material-ui/core";
 import HeaderMenus from "./HeaderMenus";
 import ClosableDrawer from "./ClosableDrawer";
 import styles from "./Header.module.css";
+import { Theme } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((Theme) => ({
+
+const useStyles = makeStyles((theme: Theme) => ({
   root: {
     flexGrow: 1,
   },
@@ -26,13 +28,11 @@ const useStyles = makeStyles((Theme) => ({
 
 const Header = () => {
   const classes = useStyles();
-  // const dispatch = useDispatch();
-  // const selector = useSelector((state) => state);
 
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<boolean>(false);
 
   const handleDrawerToggle = useCallback(
-    (event) => {
+    (event): void => {
       if (
         event.type === "keydown" &&
         (event.key === "Tab" || event.key === "Shift")
@@ -46,7 +46,7 @@ const Header = () => {
 
   return (
     <div className={styles.headerRoot}>
-      <div classes={classes.root}>
+      <div>
         <AppBar position="fixed" className={classes.menuBar}>
           <Toolbar className={classes.toolbar}>
             <div className={classes.iconButtons}>

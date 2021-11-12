@@ -1,58 +1,4 @@
-.heading2Xl {
-  font-size: 2.5rem;
-  line-height: 1.2;
-  font-weight: 800;
-  letter-spacing: -0.05rem;
-  margin: 1rem 0;
-}
-
-.headingXl {
-  font-size: 2rem;
-  line-height: 1.3;
-  font-weight: 800;
-  letter-spacing: -0.05rem;
-  margin: 1rem 0;
-}
-
-.headingLg {
-  font-size: 1.5rem;
-  line-height: 1.4;
-  margin: 1rem 0;
-}
-
-.headingMd {
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-.borderCircle {
-  border-radius: 9999px;
-}
-
-.colorInherit {
-  color: inherit;
-}
-
-.padding1px {
-  padding-top: 1px;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.listItem {
-  margin: 0 0 1.25rem;
-}
-
-.lightText {
-  color: #666;
-}
-
 .mainBox {
-  height: 117%;
   margin: 1.5rem 0rem 1.5rem 0rem;
   border-radius: 0.5rem;
   box-shadow: inset 7px 7px 5px rgba(170, 170, 170, 0.48),
@@ -73,9 +19,10 @@
 }
 
 .profileUpper {
+  font-weight: 600;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   padding-top: 6rem;
 }
@@ -83,6 +30,18 @@
 @media screen and (max-width: 1200px) {
   .profileUpper {
     display: block;
+    padding-top: 4rem;
+  }
+  .profileFrame {
+    padding: 3rem 0 2rem 0;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .profileFrame {
+    width: 95%;
   }
 }
 
@@ -99,12 +58,56 @@
 }
 
 .profileFrame {
-  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
 }
 
 .profileFrame > p {
-  margin: 3px;
-  color: rgb(95, 95, 95);
+  margin: 1px;
+  color: rgb(129, 129, 129);
+  font-size: 0.9rem;
+}
+
+.informationTitle {
+  color: rgb(129, 129, 129);
+  text-align: center;
+  padding: 3.5rem 0 2rem 0;
+}
+
+@media screen and (max-width: 800px) {
+  .profileFrame > p {
+    margin: 0px;
+    font-size: 0.8rem;
+  }
+  .informationTitle {
+    padding: 0rem 0 0rem 0;
+  }
+}
+
+.moreInformation {
+  color: rgb(148, 148, 148);
+  font-weight: 600;
+  min-height: 100px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  border-radius: 0.5rem;
+  box-shadow: inset 7px 7px 5px rgba(170, 170, 170, 0.48),
+    inset -7px -7px 5px #ffffff;
+  margin-bottom: 2rem;
+}
+
+.informationFrame {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0 3rem 0;
+}
+
+.ohr {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #d1d1d1;
+  border-radius: 5rem;
+  border: 0; /*デフォルトデザインでは線がある場合があるので、消しておく。*/
 }

@@ -3,15 +3,12 @@
   min-height: 100vh;
 }
 
-@media screen and (max-width: 1000px) {
-  .container {
-    display: none;
-  }
-}
-
 .containerFrame {
+  width: 9%;
   padding-top: 1.5rem;
   text-align: center;
+  position: fixed;
+  margin: 0 auto;
 }
 
 .navObject {
@@ -21,4 +18,10 @@
   border: none;
   box-shadow: 9px 9px 16px rgba(173, 173, 173, 0.6), -9px -9px 16px #ffffff;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    display: none;
+  }
 }
