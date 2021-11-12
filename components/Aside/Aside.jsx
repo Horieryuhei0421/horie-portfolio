@@ -6,7 +6,10 @@ const Aside = () => {
   return (
     <div className={styles.container}>
       <div className={styles.containerFrame}>
-        <button>○</button>
+        <button className={styles.asideObject}>HOME</button>
+        <button className={styles.asideObject}>PERSON</button>
+        <button className={styles.asideObject}>PROJECTS</button>
+        <button className={styles.asideObject}>LINK</button>
       </div>
     </div>
   );
