@@ -52,7 +52,7 @@
 }
 
 .mainBox {
-  height: 80%;
+  height: 117%;
   margin: 1.5rem 0rem 1.5rem 0rem;
   border-radius: 0.5rem;
   box-shadow: inset 7px 7px 5px rgba(170, 170, 170, 0.48),
@@ -70,4 +70,41 @@
   .mainBox {
     margin: 1.5rem auto;
   }
+}
+
+.profileUpper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 6rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .profileUpper {
+    display: block;
+  }
+}
+
+.borderCircle {
+  height: 170px;
+  width: 280px;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  box-shadow: 9px 9px 16px rgb(173 173 173 / 60%), -9px -9px 16px #ffffff;
+}
+
+.borderCircleIn {
+  border-radius: 0.5rem;
+}
+
+.profileFrame {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.profileFrame > p {
+  margin: 3px;
+  color: rgb(95, 95, 95);
 }
