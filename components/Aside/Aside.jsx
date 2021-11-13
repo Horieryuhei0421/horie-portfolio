@@ -1,4 +1,6 @@
 import React, { useState, useCallback } from "react";
+import Link from "next/link";
+
 import { makeStyles } from "@material-ui/styles";
 import styles from "./Aside.module.css";
 
@@ -6,9 +8,15 @@ const Aside = () => {
   return (
     <div className={styles.container}>
       <div className={styles.containerFrame}>
-        <button className={styles.asideObject}>HOME</button>
-        <button className={styles.asideObject}>PERSON</button>
-        <button className={styles.asideObject}>PROJECTS</button>
+        <Link href="/">
+          <button className={styles.asideObject}>HOME</button>
+        </Link>
+        <Link href="/pages/profile">
+          <button className={styles.asideObject}>PERSON</button>
+        </Link>
+        <Link href="/pages/projects">
+          <button className={styles.asideObject}>PROJECTS</button>
+        </Link>
         <button className={styles.asideObject}>LINK</button>
       </div>
     </div>

@@ -66,12 +66,9 @@ export default function FirstPost() {
                 汎用的に使われる機能を備えたWebアプリをデプロイするまでの技術があります。また制作物では「Next.js」,「TypeScript」などの新しい技術も積極的に用いているので新しいものを学ぶ向上心も見ていただきたいと思います。</p>
               <hr className={styles.ohr} />
             </div>
-
           </section>
         </div>
-        <Link href="/">
-          <a>go to first</a>
-        </Link>
+        <div className={styles.moduleSpacer} />
       </section>
     </Layout>
   )

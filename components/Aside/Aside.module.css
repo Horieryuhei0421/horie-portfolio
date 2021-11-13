@@ -24,8 +24,17 @@
   padding: 1.4rem 2rem;
   border-radius: 0.5rem;
   border: none;
-  box-shadow: 9px 9px 16px rgba(173, 173, 173, 0.6), -9px -9px 16px #ffffff;
+  box-shadow: 7px 7px 7px hsl(0deg 0% 68% / 60%), -7px -7px 7px #fff;
   margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.asideObject:hover {
+  transform: translate3d(0, 3px, 0);
+  color: #444444;
+  box-shadow: inset 7px 7px 10px rgb(170 170 170 / 48%),
+    inset -7px -7px 10px #ffffff;
+  background: rgb(231, 231, 231);
 }
 
 @media screen and (max-width: 1300px) {

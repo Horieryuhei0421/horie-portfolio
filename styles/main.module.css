@@ -51,7 +51,7 @@
   width: 300px;
   margin: 0 auto;
   border-radius: 0.5rem;
-  box-shadow: 9px 9px 16px rgb(173 173 173 / 60%), -9px -9px 16px #ffffff;
+  box-shadow: 7px 7px 7px hsl(0deg 0% 68% / 60%), -7px -7px 7px #fff;
 }
 
 .borderCircleIn {
@@ -157,7 +157,7 @@
   color: #7c7c7c;
   border-radius: 50%;
   border: none;
-  box-shadow: 9px 9px 16px rgba(173, 173, 173, 0.6), -9px -9px 16px #ffffff;
+  box-shadow: 7px 7px 7px hsl(0deg 0% 68% / 60%), -7px -7px 7px #fff;
   margin-bottom: 2rem;
   margin: 2rem 1.5rem 1rem auto;
 }
@@ -202,6 +202,10 @@
   .top2 > p {
     font-weight: 500;
     margin: 0 10% 0 10%;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
+}
+/* ------------ */
+.moduleSpacer {
+  height: 32px;
 }
