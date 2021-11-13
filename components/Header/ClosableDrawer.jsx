@@ -65,7 +65,9 @@ const ClosableDrawer = (props) => {
               </Link>
             </div>
             <div className={styles.nemuFlex}>
-              <button className={styles.objectAline}>PROJECTS</button>
+              <Link href="/pages/projects">
+                <button className={styles.objectAline}>PROJECTS</button>
+              </Link>
               <buuton className={styles.objectAline}>LINK</buuton>
             </div>
           </List>

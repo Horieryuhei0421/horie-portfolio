@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <section className={styles.mainBox}>
         <div className={styles.topUp}>
-          <h2>FRONT=END ENGINEER</h2>
+          <h2>FRONT-END ENGINEER</h2>
           <h1>HORIE RYUHEI</h1>
           <h2>Portfolio</h2>
         </div>
@@ -25,6 +25,7 @@ export default function Home() {
           <p>You can move to the page of personal information</p>
           <p>and past works from the side bar on the right side.</p>
         </section>
+
       </section>
       <section className={styles.top2}>
         <p>Thank you for visiting.</p>
