@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
+import Link from "next/link";
 import {
   Drawer,
   List,
@@ -35,7 +36,6 @@ const ClosableDrawer = (props) => {
     props.onClose(event);
   };
 
-
   return (
     <nav>
       <Drawer
@@ -57,12 +57,16 @@ const ClosableDrawer = (props) => {
         >
           <List>
             <div className={styles.nemuFlex}>
-              <div className={styles.objectAline}>HOME</div>
-              <div className={styles.objectAline}>PERSON</div>
+              <Link href="/">
+                <button className={styles.objectAline}>HOME</button>
+              </Link>
+              <Link href="/pages/profile">
+                <button className={styles.objectAline}>PERSON</button>
+              </Link>
             </div>
             <div className={styles.nemuFlex}>
-              <div className={styles.objectAline}>PROJECTS</div>
-              <div className={styles.objectAline}>LINK</div>
+              <button className={styles.objectAline}>PROJECTS</button>
+              <buuton className={styles.objectAline}>LINK</buuton>
             </div>
           </List>
         </div>

@@ -24,7 +24,7 @@
   padding: 1.4rem 2rem;
   border-radius: 0.5rem;
   border: none;
-  box-shadow: 9px 9px 16px rgba(173, 173, 173, 0.6), -9px -9px 16px #ffffff;
+  box-shadow: 7px 7px 7px hsl(0deg 0% 68% / 60%), -7px -7px 7px #fff;
   margin-bottom: 2rem;
 }
 
