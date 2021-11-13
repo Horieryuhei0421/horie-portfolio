@@ -28,7 +28,6 @@ const useStyles = makeStyles((theme: Theme) => ({
 
 const Header = () => {
   const classes = useStyles();
-
   const [open, setOpen] = useState<boolean>(false);
 
   const handleDrawerToggle = useCallback(

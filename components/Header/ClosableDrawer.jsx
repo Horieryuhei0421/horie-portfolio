@@ -35,20 +35,6 @@ const ClosableDrawer = (props) => {
     props.onClose(event);
   };
 
-  const menus = [
-    {
-      func: selectMenu,
-      label: "HOME",
-      id: "home",
-      value: "/",
-    },
-    {
-      func: selectMenu,
-      label: "PROFILE",
-      id: "profile",
-      value: "/posts/firstpost",
-    },
-  ];
 
   return (
     <nav>
@@ -58,7 +44,6 @@ const ClosableDrawer = (props) => {
         anchor="top"
         open={props.open}
         onClose={(e) => props.onClose(e)}
-        // classes={{ paper: classes.drawerPaper }}
         ModalProps={{ keepMounted: true }}
         className={classes.bg}
       >
@@ -71,15 +56,6 @@ const ClosableDrawer = (props) => {
           }}
         >
           <List>
-            {/* {menus.map((menu) => (
-              <ListItem
-                button
-                key={menu.id}
-                onClick={(e) => menu.func(e, menu.value)}
-              >
-                <ListItemText primary={menu.label} />
-              </ListItem>
-            ))} */}
             <div className={styles.nemuFlex}>
               <div className={styles.objectAline}>HOME</div>
               <div className={styles.objectAline}>PERSON</div>

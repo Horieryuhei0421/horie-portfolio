@@ -3,6 +3,7 @@
   border-radius: 0.5rem;
   box-shadow: inset 7px 7px 5px rgba(170, 170, 170, 0.48),
     inset -7px -7px 5px #ffffff;
+  color: rgb(117, 117, 117);
 }
 
 @media screen and (max-width: 1000px) {
@@ -39,15 +40,15 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 420px) {
   .profileFrame {
-    width: 95%;
+    width: 98%;
   }
 }
 
 .borderCircle {
   height: 170px;
-  width: 280px;
+  width: 300px;
   margin: 0 auto;
   border-radius: 0.5rem;
   box-shadow: 9px 9px 16px rgb(173 173 173 / 60%), -9px -9px 16px #ffffff;
@@ -110,4 +111,97 @@
   background-color: #d1d1d1;
   border-radius: 5rem;
   border: 0; /*デフォルトデザインでは線がある場合があるので、消しておく。*/
+}
+
+@media screen and (max-width: 700px) {
+  .informationFrame > div > p {
+    font-size: 0.8rem;
+  }
+}
+
+.topUp {
+  padding: 9rem 0 6rem 10%;
+}
+
+.topUp > h2 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+.topUp > h1 {
+  font-size: 5rem;
+  margin: 0;
+  padding: 1rem 0 1rem 0;
+}
+
+.mainBox > .top {
+  padding: 0rem 0 6em 10%;
+}
+
+.mainBox > .top > p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.top2 > p {
+  margin: 0;
+  font-weight: 700;
+  color: rgb(117, 117, 117);
+  margin-left: 10%;
+}
+
+.sircleObjects {
+  height: 3.5rem;
+  width: 3.5rem;
+  padding: 1rem;
+  color: #7c7c7c;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 9px 9px 16px rgba(173, 173, 173, 0.6), -9px -9px 16px #ffffff;
+  margin-bottom: 2rem;
+  margin: 2rem 1.5rem 1rem auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .topUp {
+    padding: 6rem 0 7rem 10%;
+  }
+  .top {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .top2 {
+    display: none;
+  }
+  .sircleObjects {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topUp > h1 {
+    font-size: 3.2rem;
+  }
+  .topUp > h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .topUp > h1 {
+    font-size: 2.3rem;
+  }
+  .topUp > h2 {
+    font-size: 1.3rem;
+  }
+  .topUp {
+    padding: 6rem 0 5rem 10%;
+  }
+  .top2 > p {
+    font-weight: 500;
+    margin: 0 10% 0 10%;
+    font-size: 0.9rem;
+  }
 }
