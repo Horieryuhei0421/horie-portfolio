@@ -4,7 +4,7 @@ import Layout, { siteTitle } from '../../components/layout'
 import Image from 'next/image'
 import styles from '../../styles/main.module.css'
 
-export default function FirstPost() {
+export default function Projects() {
   return (
     <Layout>
       <Head>

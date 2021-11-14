@@ -68,7 +68,9 @@ const ClosableDrawer = (props) => {
               <Link href="/pages/projects">
                 <button className={styles.objectAline}>PROJECTS</button>
               </Link>
-              <buuton className={styles.objectAline}>LINK</buuton>
+              <Link href="/pages/link">
+                <buuton className={styles.objectAline}>LINK</buuton>
+              </Link>
             </div>
           </List>
         </div>

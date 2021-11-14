@@ -5,7 +5,7 @@ import Image from 'next/image'
 // import Header from '../components/Header/Header'
 import styles from '../../styles/main.module.css'
 
-export default function FirstPost() {
+export default function Profile() {
   return (
     <Layout>
       <Head>
