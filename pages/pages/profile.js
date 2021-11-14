@@ -51,7 +51,7 @@ export default function Profile() {
             </div>
             <div>
               <p>使用言語・技術</p>
-              <p>JavaScript, TypeScript, React.js, Redux, Next.js, Material-UI,html, css, tailwid-css, Firebase, Versel, Git</p>
+              <p>JavaScript, TypeScript, React.js, Redux, Next.js, Node.js Material-UI,html, css, tailwid-css, Firebase, Versel, Git</p>
               <hr className={styles.ohr} />
             </div>
             <div>
