@@ -17,7 +17,9 @@ const Aside = () => {
         <Link href="/pages/projects">
           <button className={styles.asideObject}>PROJECTS</button>
         </Link>
-        <button className={styles.asideObject}>LINK</button>
+        <Link href="/pages/link">
+          <button className={styles.asideObject}>LINK</button>
+        </Link>
       </div>
     </div>
   );
