@@ -1,0 +1,109 @@
+.mainBox {
+  margin: 1.5rem 0rem 1.5rem 0rem;
+  border-radius: 0.5rem;
+  box-shadow: inset 7px 7px 5px rgba(170, 170, 170, 0.48),
+    inset -7px -7px 5px #ffffff;
+  color: rgb(117, 117, 117);
+}
+
+@media screen and (max-width: 1000px) {
+  .mainBox {
+    margin: 0.8rem auto;
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .mainBox {
+    margin: 1.5rem auto;
+  }
+}
+
+.mainBox > h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 3rem;
+}
+
+.titleBottom {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .titleBottom {
+    width: 80%;
+  }
+}
+
+.titleBottom > p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.videoFrame {
+  border-radius: 1rem;
+  width: 300px;
+  height: 600px;
+}
+
+.projectFrame {
+  padding: 3rem 0 3rem 0;
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.forApply {
+  font-size: 0.8rem;
+  padding: 0.5rem 0 1rem 0;
+}
+
+.projectDiscription {
+  height: 600px;
+  overflow: scroll;
+}
+
+.projectFrame > div > div > h2 {
+  margin: 0.4rem;
+  font-size: 1.1rem;
+}
+
+.projectFrame > div > div > p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .projectFrame {
+    width: 100%;
+    padding: 3rem 0 2rem 0;
+    display: inline-block;
+  }
+
+  .projectFrameSet {
+    text-align: center;
+  }
+
+  .projectDiscription {
+    width: 80%;
+    height: 350px;
+    padding: 1rem 0 1rem 0;
+    overflow: scroll;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .videoFrame {
+    width: 250px;
+    height: 450px;
+  }
+
+  .projectDiscription {
+    width: 85%;
+    height: 350px;
+  }
+}
