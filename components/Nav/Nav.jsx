@@ -9,7 +9,7 @@ const Nav = () => {
   return (
     <div className={styles.container}>
       <div className={styles.containerFrame}>
-        <Link href="https://github.com/Horieryuhei0421/horie-portfolio">
+        <Link href="https://github.com/Horieryuhei0421">
           <a target="_blank">
             <button className={styles.navObject}>
               <GitHub />
