@@ -24,7 +24,7 @@ export default function Projects() {
           <section className={styles.projectFrame}>
             <div className={styles.projectFrameSet}>
               <video src="/video/promoVideo.mp4" controls className={styles.videoFrame}></video>
-              <Link href="https://promo-e4daf.firebaseapp.com/">
+              <Link href="https://promo-e4daf.firebaseapp.com/signin">
                 <a target="_blank">
                   <p className={styles.forApply}>こちらからアプリへ移動できます。</p>
                 </a>

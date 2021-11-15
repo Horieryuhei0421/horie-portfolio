@@ -28,9 +28,9 @@ export default function LinkComponent() {
                 <h2 className={styles.subtitle}>各制作物へ</h2>
                 <div>
                   <h3>起業促進アプリ「Promo」へ</h3>
-                  <Link href="https://promo-e4daf.firebaseapp.com/">
+                  <Link href="https://promo-e4daf.firebaseapp.com/signin">
                     <a target="_blank">
-                      <p className={styles.forUrl}>https://promo-e4daf.firebaseapp.com/</p>
+                      <p className={styles.forUrl}>https://promo-e4daf.firebaseapp.com/signin</p>
                     </a>
                   </Link>
                 </div>
