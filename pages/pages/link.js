@@ -17,9 +17,9 @@ export default function LinkComponent() {
             <section className={styles.linkBodyFrame}>
               <section>
                 <h2 className={styles.subtitle}>堀江龍平のGit hubアカウントへ</h2 >
-                <Link href="https://github.com/Horieryuhei0421/horie-portfolio">
+                <Link href="https://github.com/Horieryuhei0421">
                   <a target="_blank">
-                    <p className={styles.githubUrl}>https://horie-portfolio.vercel.app/</p>
+                    <p className={styles.githubUrl}>https://github.com/Horieryuhei0421</p>
                   </a>
                 </Link>
               </section>
@@ -28,17 +28,17 @@ export default function LinkComponent() {
                 <h2 className={styles.subtitle}>各制作物へ</h2>
                 <div>
                   <h3>起業促進アプリ「Promo」へ</h3>
-                  <Link href="https://promo-e4daf.web.app/">
+                  <Link href="https://promo-e4daf.firebaseapp.com/">
                     <a target="_blank">
-                      <p className={styles.forUrl}>https://promo-e4daf.web.app/</p>
+                      <p className={styles.forUrl}>https://promo-e4daf.firebaseapp.com/</p>
                     </a>
                   </Link>
                 </div>
                 <div>
                   <h3>ファッションECサイト「online shop ネコ」へ</h3>
-                  <Link href="https://github.com/Horieryuhei0421/horie-portfolio">
+                  <Link href="https://ec-app-18bad.firebaseapp.com/">
                     <a target="_blank">
-                      <p className={styles.forUrl}>https://horie-portfolio.vercel.app/</p>
+                      <p className={styles.forUrl}>https://ec-app-18bad.firebaseapp.com/</p>
                     </a>
                   </Link>
                 </div>

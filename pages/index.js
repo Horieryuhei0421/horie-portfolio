@@ -32,7 +32,7 @@ export default function Home() {
         <p className={styles.discription3}>You can move to the page of personal information</p>
         <p className={styles.discription4}>and past works from the icon at the top.</p>
       </section>
-      <Link href="https://github.com/Horieryuhei0421/horie-portfolio">
+      <Link href="https://github.com/Horieryuhei0421">
         <a target="_blank">
           <div className={styles.sircleObjects} ><GitHub /></div>
         </a>
