@@ -16,7 +16,7 @@ export default function LinkComponent() {
             <h1 className={styles.title}>LINK</h1>
             <section className={styles.linkBodyFrame}>
               <section>
-                <h2 className={styles.subtitle}>堀江龍平のGit hubアカウントへ</h2 >
+                <h2 className={styles.subtitle}>堀江龍平のGithubアカウントへ</h2 >
                 <Link href="https://github.com/Horieryuhei0421">
                   <a target="_blank">
                     <p className={styles.githubUrl}>https://github.com/Horieryuhei0421</p>
